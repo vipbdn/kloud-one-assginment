@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="bg_container">
+            <!-- login form  -->
+        <div class="login_form" id="login">
+            <div class="form_container">
+                <div class="hexagon">
+                    <i class="fa-brands fa-rocketchat"></i>
+                </div>
+            
+
+                <h2 class="sign_in_heading">Sign In</h2>
+
+                <form  id="loginForm">
+
+                    <div class="input_section">
+                        <div class="input_icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div class="input_fields">
+                            <label for="loginEmail">Name</label>
+                            <input type="text" id="loginUsername" placeholder="Enter your Email id" required/>
+                        </div>  
+                    </div>
+                    
+
+                    <div class="input_section">
+                        <div class="input_icon"><i class="fa-solid fa-key"></i></div>
+                        <div class="input_fields">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" placeholder="Enter Password" required/>
+                            <i class="fa-regular fa-eye" onclick="shoeHidepwd()"></i>
+                        </div>  
+                        
+                    </div>
+                    <p class="errorMsg" id="usernamePasswordErr"></p>
+                    <p class="forget_pwd">Forget Password ?</p>
+                    <div class="btn">
+                        <button class="login_btn" type="submit">LOGIN</button>
+                    </div>
+                <div class="other_options">
+                    <p>or</p>
+
+                </div>
+                </form>
+                <div class="other_ways_to_login">
+
+                    <div class="api_login">
+                        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/122_Facebook_F_logo_logos-512.png" width="30px" height="30px" alt="">
+                    </div>
+
+                    <div class="api_login">
+                        <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" width="40px" height="40px" alt="">
+                    </div>
+            
+                    <div class="api_login">
+                        <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-512.png" width="30px" height="30px" alt="">
+                    </div>
+
+                </div>
+                <p class="register_with_email">Register now using <span class="span" onclick="showSignupForm()">Email</span></p>
+            </div>
+        </div>
+
+
+        <!-- sign up form  -->
+        <div class="signup_form" id="signUp">
+            <div class="form_container">
+                <div class="hexagon">
+                    <i class="fa-brands fa-rocketchat"></i>
+                </div>
+            
+
+                <h2 class="sign_in_heading">Sign Up</h2>
+
+                <form id="signupForm">
+
+                    <div class="input_section">
+                        <div class="input_icon"><i class="fa-regular fa-user"></i></div>
+                        <div class="input_fields">
+                            <label for="">User Name</label>
+                            <input type="text" id="username" required/>
+                        </div>  
+                    </div>
+
+                    <div class="input_section">
+                        <div class="input_icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div class="input_fields">
+                            <label for="">Email</label>
+                            <input type="email" id="regEmail" required/>
+                            
+                        </div>  
+                    </div>
+
+                    <div class="input_section">
+                        <div class="input_icon"><i class="fa-solid fa-key"></i></div>
+                        <div class="input_fields">
+                            <label for="">Password</label>
+                            <input type="password" id="password" required/>
+                        </div>  
+                    </div>
+                    <div class="input_section">
+                        <div class="input_icon"><i class="fa-solid fa-key"></i></div>
+                        <div class="input_fields">
+                            <label for="">Confirm Password</label>
+                            <input type="password" id="confirmPassword" required/>                               
+                      </div>  
+                    </div>
+                    <div class="btn">
+                        <button class="login_btn">SIGN UP</button>
+                    </div>
+                </form>
+                
+                <p class="register_with_email">Already have an account ? <span class="span" onclick="showLoginForm()">Login</span></p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+<script src="app.js"></script>   
+</body>
+</html>

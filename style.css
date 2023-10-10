@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.bg_container{
+    background-color: #948fc7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container{
+    background-color: white;
+  height: 80%;
+  min-width: 300px;
+    width: 400px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.hexagon {
+    position: relative;
+    width: 60px;
+    height: 60.92px; 
+    background-color: #49438f;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.hexagon i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px; 
+}
+
+.sign_in_heading{
+    font-size: 28px;
+    margin: 30px;
+    color: #262625cf;
+}
+
+.input_section{
+    background-color: #49438f;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 8px;
+    width: 300px;
+    color: #948fc7;
+}
+
+.input_icon{
+    color: white;
+    margin: 14px;
+    font-size: 20px;
+    color: #948fc7;
+}
+
+
+.input_fields label{
+ font-size: 10px;
+}
+
+.input_fields input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 220px;
+  padding: 8px 0;   
+}
+
+.eye{
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget_pwd{
+    color: #49438f;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.btn{
+    text-align: center;
+    margin: 16px 0px;
+}
+
+.login_btn{
+    width: 140px;
+  
+    border-radius: 8px;
+    border-width: 0;
+    background-color: #948fc7d6;
+    color: #49438f;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 0px;
+    
+}
+.other_ways_to_login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+.api_login{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px black;
+}
+
+.icon1{
+    font-size: 20px;
+    color: #0f2f99;
+}
+
+.other_options{
+    text-align: center;
+    margin: 16px 0px;
+    padding: 7px;
+}
+
+.register_with_email{
+    text-align: center;
+    color: gray;
+    font-weight: 600;
+    padding: 10px;
+    margin: 16px 0;
+}
+
+
+
+.span{
+    color: #49438f;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+
+.signup_form{
+    display: none;
+}
